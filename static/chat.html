@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script  defer src="/socket.io/socket.io.js"></script>
+    <script  defer src="js/client.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <title>ChatWid App</title>
+  </head>
+  <body>
+    <div class="chatpage">
+      <header class="chat_header">
+
+        <div id="nav">
+          <img class="chat_logo" src="chat.png" alt="image">
+          <h1>ChatWid</h1>
+        </div>
+        
+        <div class="room">
+          <h3> Room </h3>
+          <h2 id="room_name"></h2>
+        </div>
+       
+        <a id="leave" class="btn">Leave Room</a>
+
+      </header>
+
+      <main class="chat_body">
+        <div class="chat_sidepanel">
+          <h3>Users</h3>
+          <ul id="users"></ul>
+        </div>
+        <div class="chat_messages"></div>
+      </main>
+
+      <div class="chat_form_container">
+        <form action="#" id="chat_form">
+          <input type="text" name="msg" id="msg" placeholder="Enter Message" >
+          <button class="btn" type="submit"> Send </button>
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
